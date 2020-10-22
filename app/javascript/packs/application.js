@@ -17,7 +17,3 @@ require("channels")
 // const imagePath = (name) => images(name, true)
  $(".icheckbox_square-blue").change( function(){
     $('#update').submit();
-
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
