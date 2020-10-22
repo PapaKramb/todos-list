@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+h2 {
+  color: #000000;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+a {
+  font-size: 30px;
+  color:#ffffff;
+}
+
+.header {
+  position: relative;
+  background: #1e8cea;
+  padding: 20px;
+
+}
+
+.header-label {
+  text-align: center;
+}
+
+.header-label h1 {
+  color:#ffffff;
+
+  font-size:30px;
+  font-weight: bold;
+}
+
+.header-add {
+  display: block;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+.project {
+  background: #ffffff;
+  border-style: solid;
+  border-width: thin;
+  border-color: #DADADA;
+  margin: 20px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+  box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+}
+
+.project-header {
+  margin: 20px;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: #DADADA;
+}
+
+.project-todos {
+  margin: 5px;
+}
+
+.todo {
+  margin: 13px;
+}
+
+.todo-checkbox {
+  display: inline;
+  margin: 10px;
+}
+
+.todo-text {
+  display: inline;
+  margin: 10px;
+}

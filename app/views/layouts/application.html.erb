@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodosList</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <script src="/assets/application.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link data-require="bootstrap@*" data-semver="4.5.2" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script data-require="bootstrap@*" data-semver="4.5.2" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <div class="header">
+        <div class="header-label">
+          <h1>Задачи</h1>
+        </div>
+        <%= link_to '+', new_todo_path, class: 'header-add' %>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <%= yield %>
+        </div>
+      </div>
+  </body>
+</html>

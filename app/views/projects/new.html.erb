@@ -1,0 +1,12 @@
+<div class="col-md-4"></div>
+<div class="col-md-4">
+<%= form_with model: @project do |f| %>
+
+	<div class="form-group">
+		<%= f.label 'Новая задача:' %>
+		<%= f.text_field(:titile, {:class => "form-control"}) %>
+	</div>
+		<%= f.submit 'Добавить', ({:class => "btn btn-primary"}) %>
+
+<% end %>
+</div>
